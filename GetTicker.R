@@ -1,7 +1,7 @@
 require(quantmod)
 require(dplyr)
 require(scales)
-
+require(ggplot2)
 GetTicker <- function () 
 {
   today = Sys.Date()

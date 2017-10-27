@@ -1,0 +1,26 @@
+---
+title: "GetTicker"
+author: "Jane Tsai (janet.tsai@gmail.com)"
+date: "October 27, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GetTicker Introduction
+
+The GetTicker.R is a small R program that can analysis the stock performance across sector.
+The usage of the script is to call GetTicker() and it will default retrieve default 9 sector's 
+ETF stock price across different time periods.
+
+## Example output
+
+For example, the following call of function GetTicker shows the graphs.
+
+```{r GetTickerPlot, fig.height=6, fig.width=8,warning=FALSE, error=FALSE, message=FALSE}
+source("GetTicker.R")
+GetTicker()
+```
+
